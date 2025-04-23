@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { FaBars, FaHome, FaListAlt, FaQuoteLeft, FaSearch, FaShoppingCart, FaTimes, FaUser, FaUtensils } from "react-icons/fa";
 const Navbar = () => {
 
@@ -77,7 +77,7 @@ const Navbar = () => {
         </div>
 
         {/* MOBILE TOGGLE */}
-        <button onClick={() => setIsOpen(!isOpen)} aria-labels='Toggle Menu'
+        <button onClick={() => setIsOpen(!isOpen)} aria-label='Toggle Menu'
           className='md:hidden p-2 text-white hover:text-yellow-300 transition-all focus:outline-none'>
           {isOpen ? <FaTimes className='text-xl' /> : <FaBars className='text-xl' />}
         </button>
@@ -97,7 +97,7 @@ const Navbar = () => {
           ))}
 
           <div className='sm:hidden'>
-            <div className='flex itmes-center bg-white/20 rounded-full px-3
+            <div className='flex items-center bg-white/20 rounded-full px-3
             w-full'>
               <input type="text" placeholder='Search...' className='w-full bg-transparent border-
               text-white py-1 flex-1 focus:outline-none text-sm' />
